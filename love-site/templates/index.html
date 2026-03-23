@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Для тебе ❤️</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#ff4d6d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    animation: pulse 1.5s infinite;
+}
+
+p{
+    font-size:25px;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+    100%{transform:scale(1)}
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:20px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+<h1>❤️ Я тебе люблю ❤️</h1>
+
+<p>
+Мицька 💗<br>
+</p>
+
+<button onclick="showLove()">Натисни</button>
+
+<p id="love"></p>
+</div>
+
+<script>
+
+function showLove(){
+document.getElementById("love").innerHTML =
+"Я дуже сильно тебе люблю ❤️";
+}
+
+</script>
+
+</body>
+</html>
